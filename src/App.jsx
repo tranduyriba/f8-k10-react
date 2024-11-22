@@ -1,36 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { OkParseResult } from '../node_modules/@eslint/core/dist/esm/types.d';
+import Header from "./components/Header";
+import Footer from "./components/Footer/Footer";
+import  "./App.module.scss"
+function Button(props) {
+  return <button className={props.variant}>{props.children}</button>
+}
 
-function App() {
-  const [count, setCount] = useState(0)
-
+  function App()  {
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React OkParseResult</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Header />
+      <Button variant="btn btn-primary">Click me</Button>
+      <Button variant="btn btn-secondary">Secondary Button</Button>
+      <Button variant="btn btn-warning">Warning</Button>
+      <Button variant="btn btn-danger">Danger</Button>
+      <Button variant="btn btn-link">Click me</Button>
+      <Footer />
     </>
   )
 }
 
-export default App
+export default App;

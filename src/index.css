@@ -66,3 +66,25 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+* {
+  padding: 20px;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: blue;
+  color: #fff;
+}
+.btn-secondary {
+  background-color: red;
+  color: aqua;
+}
+.btn-warning {
+  background-color: rgb(244, 255, 95);
+  color: rgb(0, 0, 0);
+}
+.btn-secondary {
+  background-color: red;
+  color: aqua;
+}
